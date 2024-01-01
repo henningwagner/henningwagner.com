@@ -1,93 +1,320 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en">
   <head>
-    <title>Henning Wagner</title>
-
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="shortcut icon" href="/static/favicon.ico" />
-
-    <!-- tailwind + daisyui -->
-    <link href="/static/daisyui.css" rel="stylesheet" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./static/style.css" />
+    <link rel="shortcut icon" href="./static/fav.png" type="image/x-icon" />
+    <script src="./static/tailwind-min.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link
-      href="https://cdn.jsdelivr.net/npm/daisyui@4.4.24/dist/full.min.css"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <!-- htmx -->
-    <script src="/static/htmx.js"></script>
-
-    <!-- hyperscript -->
-    <script src="/static/hyperscript.js"></script>
-
-    <!-- svg loader for icons -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/external-svg-loader@1.6.10/svg-loader.min.js"
-      async
-    ></script>
+    <title>Home</title>
   </head>
-
-  <!-- drawer -->
-  <body class="drawer min-h-screen bg-base-200 lg:drawer-close">
-    <input id="my-drawer" type="checkbox" class="drawer-toggle" />
-
-    <!-- content -->
-    <main class="drawer-content">
-      <!-- header -->
-      <header class="grid items-center gap-2 lg:gap-4">
-        <label
-          for="my-drawer"
-          class="text-center btn-square btn-ghost drawer-button lg:show"
-        >
-          <svg
-            data-src="https://unpkg.com/heroicons/20/solid/bars-3.svg"
-            class="h-7 w-7"
-          ></svg>
-        </label>
-        <div class="grow">
-          <h1 class="lg:text-2xl lg:font-light">Hi, I'm Henning Wagner</h1>
-        </div>
-      </header>
-      <!-- /header -->
-
-      <div class="grow">
-        <h2 class="lg:text-6xl lg:font-bold">
-          Building digital products, brands and experiences.
-        </h2>
-      </div>
-
-      <div class="grow">
-        <h3 class="lg:text-2xl lg:font-light">
-          an Engineer and Entrepreneur by ❤️ I specialize in creating Cloud
-          <br />
-          Platforms, Mobile Solutions and Digital Experiences.
-        </h3>
-      </div>
-    </main>
-    <!-- /content -->
-
-    <aside class="drawer-side z-10">
-      <label for="my-drawer" class="drawer-overlay"></label>
-
-      <!-- sidebar menu -->
-      <nav
-        class="flex min-h-screen w-72 flex-col gap-2 overflow-y-auto bg-base-100 px-6 py-10"
+  <body>
+    <nav
+      class="lg:max-w-[1160px] w-full mx-auto px-4 flex justify-end py-10 gap-4 relative z-50"
+    >
+      <!--  -->
+      <button onclick="mobile()" class="">
+        <div id="one" class="w-10 h-1 duration-300 rounded-md bg-black"></div>
+        <div
+          id="two"
+          class="w-10 h-1 duration-300 rounded-md bg-black mt-2"
+        ></div>
+      </button>
+      <!--  -->
+      <div
+        id="mobilenav"
+        class="bg-white z-10 -translate-x-[2000px] duration-300 absolute top-20 shadow md:max-w-[1000px] w-full mx-auto"
       >
-        <ul class="menu">
-          <li>
-            <a class="active">
-              <svg
-                data-src="https://unpkg.com/heroicons/20/solid/home.svg"
-                class="h-5 w-5"
-              ></svg>
-              Home
-            </a>
+        <ul class="flex flex-col gap-7 items-start px-10 py-4">
+          <li class="text-black font-semibold text-base cursor-pointer">
+            <a href="/index.html">Home</a>
+          </li>
+          <li class="text-black font-semibold text-base cursor-pointer">
+            <a href="imprint.html">Imprint</a>
           </li>
         </ul>
-      </nav>
-      <!-- /sidebar menu -->
-    </aside>
+      </div>
+    </nav>
+    <!--  -->
+    <div class="lg:max-w-[950px] w-full mx-auto px-4 md:pt-20 pt-10">
+      <img
+        src="./static/hw.png"
+        alt="Wagner"
+        class="rounded-full mx-auto w-[160px] h-[160px]"
+      />
+      <h1 class="text-[32px] font-medium text-center mt-4 mb-6">
+        Hi, I’m Henning Wagner
+      </h1>
+      <h1
+        class="lg:text-[75px] text-4xl font-semibold text-center md:leading-[80px] tracking-[-.03em] relative"
+      >
+        <span class="relative"
+          >Building
+
+          <img
+            src="./static/line1.svg"
+            alt="Line"
+            class="absolute left-0 bottom-0 -z-10"
+          />
+        </span>
+        digital products, brands and experiences.
+      </h1>
+      <p class="my-10 md:max-w-[540px] w-full mx-auto text-2xl text-center">
+        an <b> Engineer </b> and <b> Entrepreneur </b> by ❤️ I specialize in
+        creating Cloud Platforms, Mobile Solutions and Digital Experiences.
+      </p>
+      <button
+        class="w-[242px] h-[72px] bg-black hover:bg-opacity-90 transform duration-300 ease-in-out text-white text-sm font-semibold flex justify-center items-center rounded-full mx-auto"
+      >
+        CONNECT WITH ME
+      </button>
+    </div>
+    <!--  -->
+    <div class="lg:max-w-[1160px] w-full mx-auto px-4 md:py-28 py-14">
+      <h1
+        class="lg:text-[48px] text-4xl font-semibold leading-[80px] tracking-[-.03em] relative"
+      >
+        <span class="relative"
+          >Resume
+
+          <img
+            src="./static/line1.svg"
+            alt="Line"
+            class="absolute left-0 -bottom-2 -z-10"
+          />
+        </span>
+      </h1>
+      <div class="flex lg:flex-nowrap flex-wrap gap-5 mt-10">
+        <div class="lg:max-w-[550px] w-full">
+          <h1
+            class="lg:text-[32px] text-2xl font-semibold leading-[80px] tracking-[-.03em] relative"
+          >
+            <span class="relative"
+              >Work Experience
+
+              <img
+                src="./static/line1.svg"
+                alt="Line"
+                class="absolute left-0 -bottom-2 -z-10"
+              />
+            </span>
+          </h1>
+          <p class="mt-10 flex gap-2 cursor-pointer text-2xl font-semibold">
+            FINEXITY
+            <img src="./static/arrow.svg" alt="Arrow" />
+          </p>
+          <p class="text-base font-bold mt-4">Founder & CTO</p>
+          <p class="text-base mt-4 font-medium">April 2018 - July 2023</p>
+          <p class="mt-14 flex gap-2 cursor-pointer text-2xl font-semibold">
+            Rhevo Ventures • Rhenus
+            <img src="./static/arrow.svg" alt="Arrow" />
+          </p>
+          <p class="text-base font-bold mt-4">Head of Innovation Management</p>
+          <p class="text-base mt-4 font-medium">March 2015 - March 2018</p>
+          <p class="mt-14 flex gap-2 cursor-pointer text-2xl font-semibold">
+            MATERNA
+            <img src="./static/arrow.svg" alt="Arrow" />
+          </p>
+          <p class="text-base font-bold mt-4">IT Project Manager</p>
+          <p class="text-base mt-4 font-medium">April 2009 - February 2015</p>
+          <p class="mt-14 flex gap-2 cursor-pointer text-2xl font-semibold">
+            WDR – German Television
+
+            <img src="./static/arrow.svg" alt="Arrow" />
+          </p>
+          <p class="text-base font-bold mt-4">Set Manager</p>
+          <p class="text-base mt-4 font-medium">September 2004 - March 2009</p>
+        </div>
+        <div class="lg:max-w-[550px] w-full">
+          <h1
+            class="lg:text-[32px] text-2xl font-semibold leading-[80px] tracking-[-.03em] relative"
+          >
+            <span class="relative"
+              >Education
+
+              <img
+                src="./static/line2.svg"
+                alt="Line"
+                class="absolute left-0 -bottom-2 -z-10"
+              />
+            </span>
+          </h1>
+          <p class="mt-10 flex gap-2 cursor-pointer text-2xl font-semibold">
+            Technical University Dortmund
+            <img src="./static/arrow.svg" alt="Arrow" />
+          </p>
+          <p class="text-base font-bold mt-4">
+            Diploma • Computer Science • Medicine
+          </p>
+          <p class="text-base mt-4 font-medium">2003 – 2009</p>
+          <p class="mt-14 flex gap-2 cursor-pointer text-2xl font-semibold">
+            WWU Münster
+            <img src="./static/arrow.svg" alt="Arrow" />
+          </p>
+          <p class="text-base font-bold mt-4">
+            Diploma • Computer Science • Mathematics
+          </p>
+          <p class="text-base mt-4 font-medium">2001 – 2003</p>
+        </div>
+      </div>
+      <!--  -->
+      <div class="flex flex-wrap gap-5 mt-14">
+        <div class="lg:max-w-[550px] w-full">
+          <h1
+            class="lg:text-[32px] text-2xl font-semibold leading-[80px] tracking-[-.03em] relative"
+          >
+            <span class="relative"
+              >Development
+              <img
+                src="./static/line2.svg"
+                alt="Line"
+                class="absolute left-0 -bottom-2 -z-10"
+              />
+            </span>
+          </h1>
+          <div class="flex md:flex-nowrap flex-wrap">
+            <div class="w-[266px]">
+              <p class="mt-10 flex gap-2 cursor-pointer text-2xl font-semibold">
+                Languages
+              </p>
+              <p class="text-base font-semibold text-[#3f4451] mt-8">Go</p>
+              <p class="text-base font-semibold text-[#3f4451] mt-5">Java</p>
+              <p class="text-base font-semibold text-[#3f4451] mt-5">Python</p>
+              <p class="text-base font-semibold text-[#3f4451] mt-5">
+                Objective-C
+              </p>
+            </div>
+            <div class="w-[266px]">
+              <p class="mt-10 flex gap-2 cursor-pointer text-2xl font-semibold">
+                Cloud
+              </p>
+              <p class="text-base font-semibold text-[#3f4451] mt-8">
+                GCP • Digital Ocean
+              </p>
+              <p class="text-base font-semibold text-[#3f4451] mt-5">
+                RPC • Event-driven
+              </p>
+              <p class="text-base font-semibold text-[#3f4451] mt-5">
+                Serverless
+              </p>
+              <p class="text-base font-semibold text-[#3f4451] mt-5">
+                Terraform
+              </p>
+              <p class="text-base font-semibold text-[#3f4451] mt-5">Docker</p>
+              <p class="text-base font-semibold text-[#3f4451] mt-5">Caddy</p>
+              <p class="text-base font-semibold text-[#3f4451] mt-5">
+                Grafana • ELK
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="lg:max-w-[550px] w-full">
+          <h1
+            class="lg:text-[32px] text-2xl font-semibold leading-[80px] tracking-[-.03em] relative"
+          >
+            <span class="relative"
+              >Design
+              <img
+                src="./static/line1.svg"
+                alt="Line"
+                class="absolute left-0 -bottom-2 -z-10"
+              />
+            </span>
+          </h1>
+          <div class="flex md:flex-nowrap flex-wrap">
+            <div class="w-[266px]">
+              <p class="mt-10 flex gap-2 cursor-pointer text-2xl font-semibold">
+                Skills
+              </p>
+              <p class="text-base font-semibold text-[#3f4451] mt-8">
+                Product Design
+              </p>
+              <p class="text-base font-semibold text-[#3f4451] mt-5">
+                Visual Design
+              </p>
+              <p class="text-base font-semibold text-[#3f4451] mt-5">
+                Wireframing
+              </p>
+              <p class="text-base font-semibold text-[#3f4451] mt-5">
+                Prototyping
+              </p>
+            </div>
+            <div class="w-[266px]">
+              <p class="mt-10 flex gap-2 cursor-pointer text-2xl font-semibold">
+                Applications
+              </p>
+              <p class="text-base font-semibold text-[#3f4451] mt-8">
+                Atlassian
+              </p>
+              <p class="text-base font-semibold text-[#3f4451] mt-5">Figma</p>
+              <p class="text-base font-semibold text-[#3f4451] mt-5">Notion</p>
+              <p class="text-base font-semibold text-[#3f4451] mt-5">Webflow</p>
+              <p class="text-base font-semibold text-[#3f4451] mt-5">
+                Adobe Suite
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="lg:max-w-[550px] w-full">
+          <h1
+            class="lg:text-[32px] text-2xl font-semibold leading-[80px] tracking-[-.03em] relative"
+          >
+            <span class="relative"
+              >Web / Mobile Management
+              <img
+                src="./static/line3.svg"
+                alt="Line"
+                class="absolute left-0 -bottom-2 -z-10 w-full"
+              />
+            </span>
+          </h1>
+          <div class="flex md:flex-nowrap flex-wrap">
+            <div class="mt-10">
+              <p class="text-base font-semibold text-[#3f4451]">
+                Hybrid Web & Native Mobile Apps
+              </p>
+              <p class="text-base font-semibold text-[#3f4451] mt-8">
+                ReactJS • React Native
+              </p>
+              <p class="text-base font-semibold text-[#3f4451] mt-5">
+                JSON • XML
+              </p>
+              <p class="text-base font-semibold text-[#3f4451] mt-5">
+                REST • GraphQL
+              </p>
+              <p class="text-base font-semibold text-[#3f4451] mt-5">
+                iOS • Android
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--  -->
+      <div
+        class="flex md:justify-between justify-center items-center gap-4 lg:mt-80 md:mt-20 mt-10 lg:max-w-[1000px] w-full mx-auto"
+      >
+        <div class="flex gap-6 items-center">
+          <a class="cursor-pointer" href="javascript:void(0)">
+            <img src="./static/twt.svg" alt="Twiter" />
+          </a>
+          <a class="cursor-pointer" href="javascript:void(0)">
+            <img src="./static/linked.svg" alt="LinkedIn" />
+          </a>
+        </div>
+        <a href="imprint.html">
+          <p class="text-base hover:underline font-semibold underline">
+            Imprint
+          </p>
+        </a>
+      </div>
+    </div>
+    <script>
+      function mobile() {
+        mobilenav.classList.toggle("translate-x-0");
+        one.classList.toggle("rotate-45");
+        two.classList.toggle("-rotate-45");
+      }
+    </script>
   </body>
-  <!-- /drawer -->
 </html>
