@@ -4,9 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./static/style.css" />
-    <link rel="shortcut icon" href="./static/fav.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="./static/hw.png" type="image/x-icon" />
     <script src="./static/tailwind-min.js"></script>
-    <script src="https://cdn.tailwindcss.com"></script>
     <title>Home</title>
   </head>
   <body>
@@ -28,7 +27,7 @@
       >
         <ul class="flex flex-col gap-7 items-start px-10 py-4">
           <li class="text-black font-semibold text-base cursor-pointer">
-            <a href="/index.html">Home</a>
+            <a href="./index.html">Home</a>
           </li>
           <li class="text-black font-semibold text-base cursor-pointer">
             <a href="imprint.html">Imprint</a>
@@ -64,11 +63,13 @@
         an <b> Engineer </b> and <b> Entrepreneur </b> by ❤️ I specialize in
         creating Cloud Platforms, Mobile Solutions and Digital Experiences.
       </p>
-      <button
-        class="w-[242px] h-[72px] bg-black hover:bg-opacity-90 transform duration-300 ease-in-out text-white text-sm font-semibold flex justify-center items-center rounded-full mx-auto"
-      >
-        CONNECT WITH ME
-      </button>
+      <a href="mailto:hi@henningwagner.com" target="_blank">
+        <button
+          class="w-[242px] h-[72px] bg-black hover:bg-opacity-90 transform duration-300 ease-in-out text-white text-sm font-semibold flex justify-center items-center rounded-full mx-auto"
+        >
+          CONNECT WITH ME
+        </button>
+      </a>
     </div>
     <!--  -->
     <div class="lg:max-w-[1160px] w-full mx-auto px-4 md:py-28 py-14">
@@ -100,31 +101,54 @@
               />
             </span>
           </h1>
-          <p class="mt-10 flex gap-2 cursor-pointer text-2xl font-semibold">
-            FINEXITY
-            <img src="./static/arrow.svg" alt="Arrow" />
-          </p>
-          <p class="text-base font-bold mt-4">Founder & CTO</p>
-          <p class="text-base mt-4 font-medium">April 2018 - July 2023</p>
-          <p class="mt-14 flex gap-2 cursor-pointer text-2xl font-semibold">
-            Rhevo Ventures • Rhenus
-            <img src="./static/arrow.svg" alt="Arrow" />
-          </p>
-          <p class="text-base font-bold mt-4">Head of Innovation Management</p>
-          <p class="text-base mt-4 font-medium">March 2015 - March 2018</p>
-          <p class="mt-14 flex gap-2 cursor-pointer text-2xl font-semibold">
-            MATERNA
-            <img src="./static/arrow.svg" alt="Arrow" />
-          </p>
-          <p class="text-base font-bold mt-4">IT Project Manager</p>
-          <p class="text-base mt-4 font-medium">April 2009 - February 2015</p>
-          <p class="mt-14 flex gap-2 cursor-pointer text-2xl font-semibold">
-            WDR – German Television
-
-            <img src="./static/arrow.svg" alt="Arrow" />
-          </p>
-          <p class="text-base font-bold mt-4">Set Manager</p>
-          <p class="text-base mt-4 font-medium">September 2004 - March 2009</p>
+          <a
+            href="https://finexity.com/"
+            target="_blank"
+            class="cursor-pointer"
+          >
+            <p class="mt-10 flex gap-2 cursor-pointer text-2xl font-semibold">
+              FINEXITY
+              <img src="./static/arrow.svg" alt="Arrow" />
+            </p>
+            <p class="text-base font-bold mt-4">Founder & CTO</p>
+            <p class="text-base mt-4 font-medium">April 2018 - July 2023</p>
+          </a>
+          <a
+            href="https://www.rhevo-innovations.com/"
+            target="_blank"
+            class="cursor-pointer"
+          >
+            <p class="mt-14 flex gap-2 cursor-pointer text-2xl font-semibold">
+              Rhevo Ventures • Rhenus
+              <img src="./static/arrow.svg" alt="Arrow" />
+            </p>
+            <p class="text-base font-bold mt-4">
+              Head of Innovation Management
+            </p>
+            <p class="text-base mt-4 font-medium">March 2015 - March 2018</p>
+          </a>
+          <a
+            href="https://www.materna.de/EN/Home/home_node.html"
+            target="_blank"
+            class="cursor-pointer"
+          >
+            <p class="mt-14 flex gap-2 cursor-pointer text-2xl font-semibold">
+              MATERNA
+              <img src="./static/arrow.svg" alt="Arrow" />
+            </p>
+            <p class="text-base font-bold mt-4">IT Project Manager</p>
+            <p class="text-base mt-4 font-medium">April 2009 - February 2015</p>
+          </a>
+          <a href="https://www1.wdr.de/index.html" target="_blank">
+            <p class="mt-14 flex gap-2 cursor-pointer text-2xl font-semibold">
+              WDR – German Television
+              <img src="./static/arrow.svg" alt="Arrow" />
+            </p>
+            <p class="text-base font-bold mt-4">Set Manager</p>
+            <p class="text-base mt-4 font-medium">
+              September 2004 - March 2009
+            </p>
+          </a>
         </div>
         <div class="lg:max-w-[550px] w-full">
           <h1
@@ -140,22 +164,34 @@
               />
             </span>
           </h1>
-          <p class="mt-10 flex gap-2 cursor-pointer text-2xl font-semibold">
-            Technical University Dortmund
-            <img src="./static/arrow.svg" alt="Arrow" />
-          </p>
-          <p class="text-base font-bold mt-4">
-            Diploma • Computer Science • Medicine
-          </p>
-          <p class="text-base mt-4 font-medium">2003 – 2009</p>
-          <p class="mt-14 flex gap-2 cursor-pointer text-2xl font-semibold">
-            WWU Münster
-            <img src="./static/arrow.svg" alt="Arrow" />
-          </p>
-          <p class="text-base font-bold mt-4">
-            Diploma • Computer Science • Mathematics
-          </p>
-          <p class="text-base mt-4 font-medium">2001 – 2003</p>
+          <a
+            href="https://www.tu-dortmund.de/en"
+            target="_blank"
+            class="cursor-pointer"
+          >
+            <p class="mt-10 flex gap-2 cursor-pointer text-2xl font-semibold">
+              Technical University Dortmund
+              <img src="./static/arrow.svg" alt="Arrow" />
+            </p>
+            <p class="text-base font-bold mt-4">
+              Diploma • Computer Science • Medicine
+            </p>
+            <p class="text-base mt-4 font-medium">2003 – 2009</p>
+          </a>
+          <a
+            href="https://www.uni-muenster.de/en/"
+            target="_blank"
+            class="cursor-pointer"
+          >
+            <p class="mt-14 flex gap-2 cursor-pointer text-2xl font-semibold">
+              WWU Münster
+              <img src="./static/arrow.svg" alt="Arrow" />
+            </p>
+            <p class="text-base font-bold mt-4">
+              Diploma • Computer Science • Mathematics
+            </p>
+            <p class="text-base mt-4 font-medium">2001 – 2003</p>
+          </a>
         </div>
       </div>
       <!--  -->
@@ -295,11 +331,19 @@
         class="flex md:justify-between justify-center items-center gap-4 lg:mt-80 md:mt-20 mt-10 lg:max-w-[1000px] w-full mx-auto"
       >
         <div class="flex gap-6 items-center">
-          <a class="cursor-pointer" href="javascript:void(0)">
-            <img src="./static/twt.svg" alt="Twiter" />
+          <a
+            class="cursor-pointer"
+            href="https://twitter.com/hewagner"
+            target="_blank"
+          >
+            <img src="./static/x.svg" alt="X" />
           </a>
-          <a class="cursor-pointer" href="javascript:void(0)">
-            <img src="./static/linked.svg" alt="LinkedIn" />
+          <a
+            class="cursor-pointer"
+            href="https://www.linkedin.com/in/henning-wagner/"
+            target="_blank"
+          >
+            <img src="./static/li.svg" alt="LinkedIn" />
           </a>
         </div>
         <a href="imprint.html">

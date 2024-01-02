@@ -4,11 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./static/style.css" />
-    <link rel="shortcut icon" href="./static/fav.png" type="image/x-icon" />
-    <script src="tailwind-min.js"></script>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet" />
-
+    <link rel="shortcut icon" href="./static/hw.png" type="image/x-icon" />
+    <script src="./static/tailwind-min.js"></script>
     <title>Imprint</title>
   </head>
   <body>
@@ -42,14 +39,14 @@
     </div>
     <div class="md:mb-28 mb-14 bg-[#F4F6FB] pt-5 md:pb-28 pb-20">
       <div class="lg:max-w-[1160px] w-full mx-auto px-4">
-        <h1 class="text-[32px] font-semibold">
+        <h1 class="text-[32px] font-semibold flex gap-2 items-center">
           German version
           <span class="font-normal"
-            ><i
-              class="em em-de text-xl"
-              aria-role="presentation"
-              aria-label="Germany Flag"
-            ></i>
+            ><img
+              src="./static/german.png"
+              alt="German"
+              class="w-[30px] mt-2"
+            />
           </span>
         </h1>
         <p class="text-base font-semibold my-7">Impressum</p>
@@ -62,7 +59,12 @@
         </p>
         <p class="my-5 text-base">
           Kontakt: <br />
-          E-Mail: <b> hi@henningwagner.com </b>
+          E-Mail:
+          <b
+            ><a href="mailto:hi@henningwagner.com" class="cursor-pointer">
+              hi@henningwagner.com
+            </a></b
+          >
         </p>
         <p class="text-base">
           Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV: <br />
@@ -73,7 +75,12 @@
         </p>
         <p class="my-5 text-base">
           Kontakt: <br />
-          E-Mail: <b> hi@henningwagner.com </b>
+          E-Mail:
+          <b
+            ><a href="mailto:hi@henningwagner.com" class="cursor-pointer">
+              hi@henningwagner.com
+            </a>
+          </b>
         </p>
         <p class="text-base my-5"><b>‍‍Haftungsausschluss </b></p>
         <p class="text-base md:max-w-[720px] w-full">
@@ -125,15 +132,11 @@
           Quelle: Pixabay
         </p>
         <!--  -->
-        <h1 class="text-[32px] font-semibold mt-10">
+        <h1 class="text-[32px] font-semibold flex gap-2 items-center mt-10">
           English version
           <span class="font-normal"
-            ><i
-              class="em em-us text-xl"
-              aria-role="presentation"
-              aria-label="United States Flag"
-            ></i
-          ></span>
+            ><img src="./static/us.png" alt="German" class="w-[30px] mt-2"
+          /></span>
         </h1>
         <p class="text-base font-semibold my-7">Imprint</p>
         <p class="text-base">
@@ -147,7 +150,12 @@
         </p>
         <p class="my-5 text-base">
           Contact: <br />
-          E-Mail: <b> hi@henningwagner.com </b>
+          E-Mail:
+          <b
+            ><a href="mailto:hi@henningwagner.com" class="cursor-pointer">
+              hi@henningwagner.com
+            </a>
+          </b>
         </p>
         <p class="text-base">
           Responsible for the content according to § 55 Abs. 2 RStV
@@ -160,7 +168,12 @@
         </p>
         <p class="my-5 text-base">
           Contact: <br />
-          E-Mail: <b> hi@henningwagner.com </b>
+          E-Mail:
+          <b
+            ><a href="mailto:hi@henningwagner.com" class="cursor-pointer">
+              hi@henningwagner.com
+            </a>
+          </b>
         </p>
         <p class="text-base my-5"><b>Disclaimer </b></p>
         <p class="text-base md:max-w-[720px] w-full">
@@ -216,11 +229,19 @@
       class="flex md:justify-between justify-center items-center gap-4 lg:mt-40 md:mt-20 mt-10 lg:max-w-[1000px] w-full mx-auto pb-20"
     >
       <div class="flex gap-6 items-center">
-        <a class="cursor-pointer" href="javascript:void(0)">
-          <img src="./static/twt.svg" alt="Twiter" />
+        <a
+          class="cursor-pointer"
+          href="https://twitter.com/hewagner"
+          target="_blank"
+        >
+          <img src="./static/x.svg" alt="X" />
         </a>
-        <a class="cursor-pointer" href="javascript:void(0)">
-          <img src="./static/linked.svg" alt="LinkedIn" />
+        <a
+          class="cursor-pointer"
+          href="https://www.linkedin.com/in/henning-wagner/"
+          target="_blank"
+        >
+          <img src="./static/li.svg" alt="LinkedIn" />
         </a>
       </div>
       <a href="imprint.html">
